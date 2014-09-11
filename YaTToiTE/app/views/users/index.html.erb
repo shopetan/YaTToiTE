@@ -3,4 +3,9 @@
 <% @users.each do |user| %>
 <li> <%= user.title %> </li>
 <% end %>
+
+<h5>協力してあげますか?</h5>
+<%= link_to "はい", new_user_path%>
+<%= link_to "Yes", new_user_path%>
+
 </ul>

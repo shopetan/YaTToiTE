@@ -1,0 +1,26 @@
+<%= form_for @content do |f| %>
+
+<p>
+	<h5>Q1</h5>
+	<%= f.text_field :Answer1 %>
+	<% if @content.errors.any?%>
+	<%= @content.errors.messages[:Answer1][0]%>
+	<% end %>
+	<h5>Q2</h5>
+	<%= f.text_field :Answer2 %>
+	<% if @content.errors.any?%>
+	<%= @content.errors.messages[:Answer2][0]%>
+	<% end %>
+	<h5>Q3</h5>
+	<%= f.text_field :Answer3 %>
+	<% if @content.errors.any?%>
+	<%= @content.errors.messages[:Answer3][0]%>
+	<% end %>
+</p>
+
+<p>
+	<%= f.submit %>
+</p>
+
+
+<%end%>
